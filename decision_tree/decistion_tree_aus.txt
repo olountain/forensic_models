@@ -1,0 +1,128 @@
+Features: 
+li_ppm_m7, mg_ppm_m24, al_ppm_m27, k_ppm_m39, ca_ppm_m42, ti_ppm_m49, mn_ppm_m55, fe_ppm_m57, rb_ppm_m85, sr_ppm_m88, zr_ppm_m90, sn_ppm_m118, ba_ppm_m137, la_ppm_m139, ce_ppm_m140, nd_ppm_m146, hf_ppm_m178, pb_ppm_m208
+
+Decision Tree: 
+|--- feature_2 <= 109.05
+|   |--- feature_6 <= 2.72
+|   |   |--- feature_0 <= 0.48
+|   |   |   |--- feature_11 <= 1.89
+|   |   |   |   |--- feature_14 <= 4.96
+|   |   |   |   |   |--- feature_7 <= 718.50
+|   |   |   |   |   |   |--- feature_1 <= 1369.00
+|   |   |   |   |   |   |   |--- feature_11 <= 0.59
+|   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |   |--- feature_11 >  0.59
+|   |   |   |   |   |   |   |   |--- feature_2 <= 28.05
+|   |   |   |   |   |   |   |   |   |--- feature_9 <= 2.37
+|   |   |   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |   |   |   |--- feature_9 >  2.37
+|   |   |   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |   |   |--- feature_2 >  28.05
+|   |   |   |   |   |   |   |   |   |--- feature_14 <= 0.07
+|   |   |   |   |   |   |   |   |   |   |--- feature_9 <= 0.57
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- feature_9 >  0.57
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- feature_14 >  0.07
+|   |   |   |   |   |   |   |   |   |   |--- feature_10 <= 13.65
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- feature_10 >  13.65
+|   |   |   |   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |--- feature_1 >  1369.00
+|   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |--- feature_7 >  718.50
+|   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |--- feature_14 >  4.96
+|   |   |   |   |   |--- class: KNM
+|   |   |   |--- feature_11 >  1.89
+|   |   |   |   |--- feature_3 <= 22.70
+|   |   |   |   |   |--- feature_5 <= 5.00
+|   |   |   |   |   |   |--- feature_14 <= 0.25
+|   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |--- feature_14 >  0.25
+|   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |--- feature_5 >  5.00
+|   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |--- feature_3 >  22.70
+|   |   |   |   |   |--- feature_9 <= 0.15
+|   |   |   |   |   |   |--- feature_9 <= 0.13
+|   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |--- feature_9 >  0.13
+|   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |--- feature_9 >  0.15
+|   |   |   |   |   |   |--- feature_11 <= 59.09
+|   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |--- feature_11 >  59.09
+|   |   |   |   |   |   |   |--- feature_11 <= 60.19
+|   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |   |--- feature_11 >  60.19
+|   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |--- feature_0 >  0.48
+|   |   |   |--- feature_15 <= 0.01
+|   |   |   |   |--- feature_2 <= 49.65
+|   |   |   |   |   |--- class: KM
+|   |   |   |   |--- feature_2 >  49.65
+|   |   |   |   |   |--- class: KNM
+|   |   |   |--- feature_15 >  0.01
+|   |   |   |   |--- class: KNM
+|   |--- feature_6 >  2.72
+|   |   |--- feature_7 <= 11.40
+|   |   |   |--- feature_0 <= 0.14
+|   |   |   |   |--- class: KM
+|   |   |   |--- feature_0 >  0.14
+|   |   |   |   |--- class: KNM
+|   |   |--- feature_7 >  11.40
+|   |   |   |--- class: KNM
+|--- feature_2 >  109.05
+|   |--- feature_2 <= 263.05
+|   |   |--- feature_11 <= 1.06
+|   |   |   |--- feature_1 <= 835.00
+|   |   |   |   |--- feature_5 <= 33.20
+|   |   |   |   |   |--- feature_7 <= 321.50
+|   |   |   |   |   |   |--- feature_1 <= 585.00
+|   |   |   |   |   |   |   |--- feature_17 <= 0.12
+|   |   |   |   |   |   |   |   |--- feature_12 <= 1.16
+|   |   |   |   |   |   |   |   |   |--- feature_11 <= 0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |   |   |   |--- feature_11 >  0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |   |   |--- feature_12 >  1.16
+|   |   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |   |   |--- feature_17 >  0.12
+|   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |--- feature_1 >  585.00
+|   |   |   |   |   |   |   |--- feature_12 <= 0.88
+|   |   |   |   |   |   |   |   |--- class: KM
+|   |   |   |   |   |   |   |--- feature_12 >  0.88
+|   |   |   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |--- feature_7 >  321.50
+|   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |--- feature_5 >  33.20
+|   |   |   |   |   |--- class: KNM
+|   |   |   |--- feature_1 >  835.00
+|   |   |   |   |--- class: KNM
+|   |   |--- feature_11 >  1.06
+|   |   |   |--- feature_5 <= 1.35
+|   |   |   |   |--- feature_7 <= 27.10
+|   |   |   |   |   |--- class: KM
+|   |   |   |   |--- feature_7 >  27.10
+|   |   |   |   |   |--- class: KNM
+|   |   |   |--- feature_5 >  1.35
+|   |   |   |   |--- feature_8 <= 0.03
+|   |   |   |   |   |--- feature_12 <= 10.55
+|   |   |   |   |   |   |--- class: KNM
+|   |   |   |   |   |--- feature_12 >  10.55
+|   |   |   |   |   |   |--- class: KM
+|   |   |   |   |--- feature_8 >  0.03
+|   |   |   |   |   |--- class: KNM
+|   |--- feature_2 >  263.05
+|   |   |--- feature_3 <= 5324.22
+|   |   |   |--- class: KNM
+|   |   |--- feature_3 >  5324.22
+|   |   |   |--- feature_1 <= 1245.00
+|   |   |   |   |--- feature_2 <= 5266.30
+|   |   |   |   |   |--- class: KNM
+|   |   |   |   |--- feature_2 >  5266.30
+|   |   |   |   |   |--- class: KM
+|   |   |   |--- feature_1 >  1245.00
+|   |   |   |   |--- class: KNM
